@@ -18,21 +18,26 @@ Creating a Python project from scratch involves several steps, including setting
 
 * **Set Up Sphinx for Documentation**:
    ```sh
-   sphinx-quickstart docs
+   sphinx-quickstart docs 
    ```
+   Please chooise sperate the build and source
 
 * **Configure Sphinx**:
-   - Edit `docs/conf.py` to include your project directory in the `sys.path`:
+   - Edit `docs/source/conf.py` to include your project directory in the `sys.path`:
      ```python
      import os
      import sys
-     sys.path.insert(0, os.path.abspath('../src'))
+     sys.path.insert(0, os.path.abspath('../../'))
+
+     # Add extends
+
      ```
 
 * **Generate API Documentation**:
     - Use the `sphinx-apidoc` command to generate reStructuredText files from your Python modules:
       ```sh
-      sphinx-apidoc -o docs/source/ ../src
+      cd $ROOT
+      sphinx-apidoc -o docs/source/ src
       ```
     - Build the HTML documentation:
       ```sh
@@ -73,3 +78,5 @@ make html
 ```
 
 This will generate the HTML documentation in the `docs/build/html` directory, which you can open in a web browser to view your API documentation.
+
+For more information how to update the document of rst,  please checkout the [example-sphinx-basic](https://github.com/readthedocs-examples/example-sphinx-basic)
