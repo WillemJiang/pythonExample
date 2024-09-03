@@ -1,7 +1,7 @@
 # tests/test_main.py
 
 import unittest
-from src.main import greet
+from example.main import greet
 
 class TestMain(unittest.TestCase):
     def test_greet(self):

@@ -1,3 +1,4 @@
+## Python Example project
 Creating a Python project from scratch involves several steps, including setting up a virtual environment, organizing your project structure, writing code, adding documentation, and setting up version control. Here's a step-by-step guide:
 
 ### Step-by-Step Guide
@@ -12,9 +13,12 @@ Creating a Python project from scratch involves several steps, including setting
    ```sh
    pip install --upgrade pip
    pip install sphinx  # For documentation
+   pip install sphinx_rtd_theme # For the theme file
    ```
 
 * **Add the project files into repo**:
+  - Add the main source file `example.main.py` file into example directory
+  - Add the unit test file `test_main.py` into tests directory
 
 * **Set Up Sphinx for Documentation**:
    ```sh
@@ -53,7 +57,7 @@ my_python_project/
 │   ├── source/
 │   ├── Makefile
 │   └── conf.py
-├── src/
+├── example/
 │   ├── __init__.py
 │   └── main.py
 ├── tests/
@@ -79,4 +83,4 @@ make html
 
 This will generate the HTML documentation in the `docs/build/html` directory, which you can open in a web browser to view your API documentation.
 
-For more information how to update the document of rst,  please checkout the [example-sphinx-basic](https://github.com/readthedocs-examples/example-sphinx-basic)
+For more information how to update the rst document, please checkout the [example-sphinx-basic](https://github.com/readthedocs-examples/example-sphinx-basic)

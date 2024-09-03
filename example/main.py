@@ -1,5 +1,5 @@
 
-# src/main.py
+# example/main.py
 
 __version__ = "0.1.0"
 

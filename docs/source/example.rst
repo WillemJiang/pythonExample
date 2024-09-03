@@ -1,13 +1,15 @@
 src package
 ===========
 
+:no-index:
+
 The main 
 ----------
 
-src.main module
+example.main module
 ---------------
 
-.. automodule:: src.main
+.. automodule:: example.main
    :members:
    :undoc-members:
    :show-inheritance:

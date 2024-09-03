@@ -13,9 +13,8 @@ documentation for details.
 The main APIs
 -------------
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
+   
+   usage
    modules
    
 
